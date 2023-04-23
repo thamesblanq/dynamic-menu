@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h4 {
+    color: brown;
+    font-size: 1.2rem;
+}
+
+.menu-btns{
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.menu-btns .menu-btn {
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid brown;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btns .menu-btn:hover {
+    background-color: brown;
+    color: white;
+}
+
+.menu-container {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+article {
+    border: 1px solid brown;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article img {
+    height: 100%;
+    width: 50%;
+    display: block;
+    margin-right: 1em;
+}
+
+.item-info {
+    padding: 0.5em;
+}
+
+.item-info .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    border-bottom: 1px solid brown;
+}
+
+.item-info .upper h3 {
+    font-size: 0.7rem;
+}
+
+.item-info .upper h4 {
+    font-size: 0.7rem;
+    color: green;
+}
+
+.item-info p {
+    font-size: 0.8rem;
+    text-align: left;
+}
+ 
+@media screen and (min-width: 768px){
+    .menu-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-btn{
+        padding: 1em;
+        margin: 0 1em;
+    }
+    .menu-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
